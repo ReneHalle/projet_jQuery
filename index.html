@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Shi Fu Mi</title>
+</head>
+
+<body>
+    <div id="song_bg">
+        <audio autoplay hidden>
+        <source src="assets/song/pkmn_theme.mp3" type="audio/mpeg">
+                    If you're reading this, audio isn't supported. 
+        </audio>
+    </div>
+    <div id="avertissement">
+        <span id="text_avertissement">Attention le jeu n'est jouable qu'en mode paysage.</span>
+    </div>
+    <div id="wrapper">
+    <header id="entete">
+        <div id="noctali">
+            <div id="compteur" >0 - 0</div>
+            <img src="assets/img/mentali.png" alt="mentali">
+        </div>
+    </header>
+    
+    <section id="rules">
+        <p id="text_rules">
+            Que vous connaissiez ou non le shifumi (Pierre, Feuille, Ciseaux), c'est l'occasion pour vous de le (re)découvrir. Cette variante reprend le système de base : sélectionner l'un des trois coups (la pierre, la feuille, les ciseaux) mais adapte avec le monde des Pokémon. Ici, ce sont les types qui permettent de battre l'adversaire. Curieux de découvrir ça ? Alors venez jouer !
+        </p>
+        <input id="rules_btn" type="button" value="Compris !">
+    </section>
+
+    <section hidden id="accueil">
+        
+        <div id="box_color_accueil">
+            <div class="galere">
+                <div id="container_profile">
+                    <img src="assets/img/sorbier.jpg" alt="Le professeur" id="sorbier_pic">
+                </div>
+                <div id="msg">
+                    <span id="greeting_msg">Bien le bonjour et bienvenue dans l'incroyable monde de Pokémon ! C'est une
+                        fantastique aventure qui t'attend. Es-tu prêt à relever le défi et montrer à l'IA que tu es le
+                        meilleur des dresseurs ? Mais rappelle-moi... quel est ton nom déjà ?</span>
+                </div>
+            </div>
+            <div id="nomutilisateur">
+                <input type="text" id="username" placeholder="Entrez votre nom">
+                <input type="button" value="Valider" id="start">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="combat" hidden>
+
+        <div id="terrain">
+            <div id="player1" class="player">
+                <input type="text" readonly id="username_show">
+                <img id="switch-img" src="" alt="">
+            </div>
+            <div id="menu_btn">
+                <input type="button" class="btn_choice gardevoir" id="gardevoir">
+                <input type="button" class="btn_choice gallame" id="gallame">
+                <input type="button" class="btn_choice zoroark" id="zoroark">
+            </div>
+            <div id="player2" class="player">
+                <input type="text" readonly id="IA_show" value="IA">
+                <img id="switch-img_ia"  src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section hidden id="msg_result">
+        <p id="match_result">Vous êtes le meilleur</p>
+    </section> -->
+
+    <footer>
+            Tous droits réservés à Nintendo
+    </footer>
+    </div>
+
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4C5A61;
+    height: 100%;
+}
+
+
+@font-face {
+    font-family: 'pkmn_text';
+    src: url('../fonts/PokemonGb-RAeo.ttf');
+}
+
+@font-face {
+    font-family: 'pkmn_result';
+    src: url('../fonts/Pokemon\ Solid.ttf');
+}
+@font-face {
+    font-family: 'pkmn_text_2';
+    src: url('../fonts/Wigglye.ttf');
+}
+/* entête */
+#noctali {
+    position: relative;
+}
+
+#noctali>img {
+    background-size: cover;
+    max-width: 100vw;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#compteur {
+    position: absolute;
+    color: rgba(234, 206, 140, 255);
+    top: 30%;
+    left: 20%;
+    padding: 1.8rem;
+    border: 5px rgba(234, 206, 140, 255) solid;
+}
+
+/* -------------------------------page règle--------------------- */
+
+#rules{
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+#text_rules{
+    margin: 10px;
+    font-family: 'pkmn_text';
+    background-color: #d6d5da;
+    font-size: 2rem;
+}
+
+#rules_btn{
+    margin-top: 10px;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #e2c94b;
+}
+
+/* ------------------------------- Fin page règle--------------------- */
+
+/* -------------------------------page accueil--------------------- */
+
+#accueil {
+    height: 100%;
+}
+
+#compteur{
+    display: none;
+}
+
+#sorbier_pic {
+    clip-path: ellipse(50% 50%);
+}
+
+#box_color_accueil {
+    background-color: #B7B7B7;
+    margin-top: 5vh
+}
+
+#nomutilisateur {
+    display: flex;
+    justify-content: center;
+}
+
+
+#username {
+    width: 20%;
+    height: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.galere {
+    display: grid;
+}
+
+#container_profile {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 2rem;
+}
+
+#msg {
+    font-family: 'pkmn_text';
+    background-color: #d6d5da;
+    line-height: 1.5rem;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 2rem;
+}
+
+#avertissement{
+    text-align: center;
+    margin-top: 50vh;
+
+}
+
+
+
+#text_avertissement{
+    font-family: 'pkmn_text';
+    background-color: #d6d5da;
+
+}
+
+#greeting-msg {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#start {
+    width: 8rem;
+    border-radius: 1rem;
+    height: 2rem;
+    background-color: rgba(234, 206, 140, 255);
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+footer {
+    color: rgba(234, 206, 140, 255);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: lightgrey;
+    background-image: url("../img/footer_Giratina.png");
+    background-size: cover;
+}
+
+/* -------------------------------      FIN page accueil--------------------- */
+
+
+/* --------------------------------- Page Combat --------------------------------------------- */
+
+.btn_choice {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0.7rem;
+}
+input{
+    text-align: center;
+}
+
+#terrain {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player>img {
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+#player1>img {
+    background-color: rgba(210, 180, 203, 255);
+    box-shadow: #252525 10px 5px 5px;
+}
+
+#player2>img {
+    background-color: black;
+    box-shadow: #e2c94b 10px 5px 5px;
+
+}
+
+#menu_btn {
+    margin: 20px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    border-radius: 20rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: min-content;
+}
+
+.gardevoir {
+    background-image: url(../img/gardevoir.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.gallame {
+    background-image: url(../img/gallame.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.zoroark {
+    background-image: url(../img/zoroark.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* --------------------------------- Fin Page Combat --------------------------------------------- */
+
+.swal-text {
+    font-family: 'pkmn_text';
+}
+
+.swal-title {
+    font-family: 'pkmn_result';
+    color: #5bb3fb;
+}
+
+@media screen and (max-width:700px) {
+
+
+    /* -------------- règles ------------------ */
+    #rules{
+        margin-top: 50px;
+        text-align:justify;
+        padding: 5px;
+    }
+
+    #text_rules{
+        font-family:'pkmn_text_2';
+        font-size: 1.75rem;
+    }
+
+    #rules_btn{
+        display: flex;
+        justify-content: center;
+        margin-left: 150px;
+    }
+
+    /* --------------- ACCUEIL -----------------*/
+
+    #entete {
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .galere {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container_profile{
+        display: flex;
+        justify-content: center;
+    }
+
+        /* --------------- FIN ACCUEIL -----------------*/
+
+            /* --------------- COMBAT -----------------*/
+        
+
+            #entete{
+                display: block;
+            }
+            #noctali>img{
+                display: none;
+            }
+
+            #compteur{
+                position: absolute;
+                top: 75vh;
+                left: 50vw;
+                padding: 1.8rem;
+                width: 10rem;
+                text-align: center;
+            }
+            #terrain {
+                display: grid;
+            }
+
+            #menu_btn{
+                grid-area: 1/1/5/2;
+                margin: 0;
+                margin-left: 0.5rem;
+                padding: 0;
+                margin-top: 5px;
+            }
+
+            #player1{
+                grid-area: 2/3/3/4;
+            }
+
+            #player1 > img{
+                height: 150px;
+            }
+
+            #player2{
+                grid-area: 2/5/3/6;
+            }
+
+            #player2 > img{
+                height: 150px;
+            }
+            
+
+            /* --------------- FIN COMBAT -----------------*/
+}
+
+@media only screen and (orientation:portrait) {
+    #wrapper {
+        display: none;
+    }
+    #accueil > #avertissement{
+        display: block;
+    }
+    }
+
+    @media only screen and (orientation:landscape) {
+    #avertissement{
+        display: none;
+    }
+    }
